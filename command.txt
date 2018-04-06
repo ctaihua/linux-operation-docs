@@ -26,5 +26,5 @@ chmod +x standalone.sh
 R-recurve
 sudo chmod -R 777 jboss-eap-7.0_wkbench2
 
-
-
+reduce desktop icon size:
+gsettings set org.gnome.nautilus.icon-view default-zoom-level small
