@@ -1,0 +1,23 @@
+su - root
+
+Disable Firewalld
+To disable firewalld, run the following command as root:
+
+systemctl disable firewalld
+
+Stop Firewalld
+To stop firewalld, run the following command as root:
+
+systemctl stop firewalld
+
+
+Check the Status of Firewalld
+And finally, to check the status of firewalld, run the following command as root:
+
+systemctl status firewalld
+
+--
+
+Your standalone.sh is not executable which is why you get "Permission denied."  Use this command to make it executable:
+
+chmod +x standalone.sh
