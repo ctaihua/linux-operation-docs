@@ -28,3 +28,6 @@ sudo chmod -R 777 jboss-eap-7.0_wkbench2
 
 reduce desktop icon size:
 gsettings set org.gnome.nautilus.icon-view default-zoom-level small
+
+network auto start
+I think the file you were looking for is /etc/sysconfig/network-scripts/ifcfg-eth0 and the entry should be something like 'ONBOOT=yes'.
