@@ -21,3 +21,10 @@ systemctl status firewalld
 Your standalone.sh is not executable which is why you get "Permission denied."  Use this command to make it executable:
 
 chmod +x standalone.sh
+
+
+R-recurve
+sudo chmod -R 777 jboss-eap-7.0_wkbench2
+
+
+
