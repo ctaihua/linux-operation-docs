@@ -31,3 +31,10 @@ gsettings set org.gnome.nautilus.icon-view default-zoom-level small
 
 network auto start
 I think the file you were looking for is /etc/sysconfig/network-scripts/ifcfg-eth0 and the entry should be something like 'ONBOOT=yes'.
+
+#ant
+export ANT_HOME=/home/wxl/ant/apache-ant-1.9.7    
+export CATALINA=/home/wxl/tomcat                 
+export PATH=$PATH:$ANT_HOME/bin             
+source  /etc/profile
+ant -version 
