@@ -38,3 +38,7 @@ export CATALINA=/home/wxl/tomcat
 export PATH=$PATH:$ANT_HOME/bin             
 source  /etc/profile
 ant -version 
+
+
+display hidden folder in UI
+ctrl-h
