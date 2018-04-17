@@ -39,6 +39,119 @@ export PATH=$PATH:$ANT_HOME/bin
 source  /etc/profile
 ant -version 
 
+su
+// clean root shell, The -i (simulate initial login) option runs the shell specified by the password database entry of the target user as a login shell.
+sudo -i
+usermod -G wheel philip //add philip to root in redhat
 
 display hidden folder in UI
 ctrl-h
+
+//list firewall rules
+sudo iptables -L
+
+/etc/sysctl.conf
+net.ipv4.ip_forward=1
+
+//implement the changes immediately
+sysctrl -password		
+
+// mount command is used to connect a device such as a partition or a DVD drive on a specified directory. For example, 
+// the following command mounts the standard DVD drive onto the /media directory
+mount /dev/cdrom /media
+// default is iso9660, if not display following errors
+mount: you must specify the filesystem type
+// mount iso file
+mount -o loop rhel-server-7.0-x86_64-dvd.iso /media				
+
+// copy the dvd content to a dir
+// copy all the file in archive -a recursively 
+// dot(.) at the end means all hidden files in the copy command
+cp -a /media/. /path/to/dir
+
+
+// setup default Apache server
+yum -y install httpd
+
+// httpd.conf in /etc/httpd/conf/ dir
+// start the Apache service
+systemctl start httpd
+//--> to 127.0.0.1
+
+// start but not enable, so we need enable it
+systemctl enable httpd
+
+//man -k only search for command and command description
+man -k password | grep 8
+
+man useradd
+useradd anna
+passwd anna
+exit
+
+// with number in filenames
+ls *[0-9]*
+ls -d *[0-9]*
+ls -l | less
+
+vim test.txt
+i : insert
+a : append
+o : open a blank line
+:wq
+ZZ same as :wq
+Exc
+
+dd : delete line
+yy : copy a line
+p  : paste
+v  : for viaual, mark a block, arrow lines, mark lines
+  -d
+  -y  -> copy
+  -p  -> paste
+u undo
+ctrl-r  re-do
+: %s/old/new/g  --> looking for old in text and replace them with new //substitutions
+
+ls --help | less
+man ls
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
