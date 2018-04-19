@@ -1,5 +1,8 @@
 su - root
 
+ps -ef | jboss
+
+
 Disable Firewalld
 To disable firewalld, run the following command as root:
 
